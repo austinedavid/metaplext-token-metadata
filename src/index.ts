@@ -34,7 +34,7 @@ async function CreateMetaData() {
   // create a dev connection with the umi flamework
   // then create a signer with the umi flamework
   const mint = new web3.PublicKey(
-    "6cYs9C4aLfVX7UHmJZM1wsj2K6bG5JLXJuP8U3RDD1cU"
+    "me6j9RgxCUfejQ943jCZbgUgW4cTJzKFB7GDJjrw5ZY"
   );
   // create umi below
   const umi = createUmi("https://api.devnet.solana.com");
@@ -45,9 +45,9 @@ async function CreateMetaData() {
 
   // below is our object metadata
   const ourMetaData = {
-    name: "JOBBER MAN",
-    symbol: "JMAN",
-    uri: "https://res.cloudinary.com/dffhwsp2h/image/upload/v1698191914/cld-sample-5.jpg",
+    name: "DavidoEgbod MAN",
+    symbol: "EgboMand",
+    uri: "https://github.com/austinedavid/metaplext-token-metadata/blob/main/image/dav1.jpg",
   };
   // creating the data we will use onchain
   const onchainData = {
@@ -89,7 +89,7 @@ async function UpdateMetaData() {
   // create a dev connection with the umi flamework
   // then create a signer with the umi flamework
   const mint = new web3.PublicKey(
-    "6cYs9C4aLfVX7UHmJZM1wsj2K6bG5JLXJuP8U3RDD1cU"
+    "Gtw6Bqt25pHM4Z7LL3Kzvch3nkqjKgogXUHvJ4KNVprB"
   );
   // create umi below
   const umi = createUmi("https://api.devnet.solana.com");
@@ -139,8 +139,8 @@ async function UpdateMetaData() {
 }
 async function main() {
   // execute function that creates metadata
-  // CreateMetaData();
+  CreateMetaData();
   // execute function that update metadata
-  UpdateMetaData();
+  // UpdateMetaData();
 }
 main();
