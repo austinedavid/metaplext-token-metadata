@@ -25,6 +25,8 @@ import {
   fromWeb3JsPublicKey,
 } from "@metaplex-foundation/umi-web3js-adapters";
 import { generateSecrete } from "./nmemonic";
+import nfupload from "./singlenft";
+import { decode } from "bs58";
 
 // this function below is for creating new token
 async function CreateMetaData() {
@@ -146,5 +148,6 @@ async function main() {
   // execute function that update metadata
   // UpdateMetaData();
   generateSecrete();
+  // nfupload();
 }
 main();

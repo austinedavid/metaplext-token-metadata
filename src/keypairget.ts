@@ -6,7 +6,6 @@ dotenv.config();
 const ourKeypair = (): web3.Keypair => {
   // get the secrete key here
   const privateKey = process.env.SECRETE_KEY;
-  console.log(privateKey);
   // convert it back to based json
   const parsedPrivateKey = JSON.parse(privateKey ?? "") as number[];
   // convert it back to uint8array
